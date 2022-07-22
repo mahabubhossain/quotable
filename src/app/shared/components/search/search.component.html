@@ -1,0 +1,18 @@
+<form
+  class="search-wrapper"
+  [formGroup]="searchForm"
+  (ngSubmit)="search()">
+  <input
+    type="text"
+    placeholder="Enter search query"
+    class="search-input"
+    formControlName="searchString"
+  >
+  <button
+    class="search-button"
+    type="submit"
+    [disabled]="searchForm.invalid"
+  >
+    {{ isSearching ? 'Searching...' : 'Search' }}
+  </button>
+</form>

@@ -1,0 +1,12 @@
+.header {
+  padding: 15px 20px;
+  background-color: #e3c461;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header span {
+  font-size: 18px;
+  font-weight: 400;
+}

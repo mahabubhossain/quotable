@@ -1,0 +1,25 @@
+.search-wrapper {
+  display: flex;
+}
+
+.search-input {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  border: thin solid lightblue;
+  border-right: none;
+  min-width: 300px;
+  width: 100%;
+  outline: none;
+}
+
+.search-button {
+  height: 40px;
+  border-radius: 0 5px 5px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: thin solid lightblue;
+  cursor: pointer;
+  background-color: transparent;
+}

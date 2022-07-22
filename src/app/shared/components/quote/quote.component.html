@@ -1,0 +1,8 @@
+<div class="quote">
+  <p class="content">{{ quote.content }}</p>
+  <p class="author">Author: {{ quote.author }}</p>
+  <p class="date">Date: {{ quote.dateAdded }}</p>
+  <div class="tags">
+    Tags: <span *ngFor="let tag of quote.tags">#{{ tag }} </span>
+  </div>
+</div>

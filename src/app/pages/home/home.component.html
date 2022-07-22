@@ -1,0 +1,24 @@
+<!-- HEADER COMPONENT -->
+<header></header>
+
+<div class="content-wrapper">
+  <!--
+    RENDERING SEARCH COMPONENT
+    @output searchEvent = Quotes array 
+  -->
+  <search
+    (searchEvent)="getResult($event)"
+  >
+  </search>
+
+  <!--
+    RENDERING SEARCH RESULTS
+    @Input quote = Quote object
+  -->
+  <div class="quotes">
+    <quote
+      *ngFor="let quote of quotes"
+      [quote]="quote">
+    </quote>
+  </div>
+</div>
